@@ -16,7 +16,7 @@ export default async function ArchivePage({ searchParams }) {
         </h1>
         <div className="text-center">
           <p className="mt-2 text-lg">
-            See all posts we have ever written.
+            See all the essays we have ever written.
           </p>
         </div>
         <Suspense

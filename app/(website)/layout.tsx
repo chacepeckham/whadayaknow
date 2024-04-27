@@ -12,14 +12,15 @@ async function sharedMetaData(params) {
     title: {
       default:
         settings?.title ||
-        "Stablo - Blog Template for Next.js & Sanity CMS",
-      template: "%s | Stablo"
+        "whadayaknow",
+      template: "%s | whadayaknow"
     },
+    metadataBase: new URL(settings?.url || 'https://whadayaknow.com'),
     description:
       settings?.description ||
-      "Stablo - popular open-source next.js and sanity blog template",
+      "whadayaknow - personal collection of essays",
     keywords: ["Next.js", "Sanity", "Tailwind CSS"],
-    authors: [{ name: "Surjith" }],
+    authors: [{ name: "whadayaknow" }],
     canonical: settings?.url,
     openGraph: {
       images: [
@@ -33,7 +34,7 @@ async function sharedMetaData(params) {
       ]
     },
     twitter: {
-      title: settings?.title || "Stablo Template",
+      title: settings?.title || "whadayaknow",
       card: "summary_large_image"
     },
     robots: {
