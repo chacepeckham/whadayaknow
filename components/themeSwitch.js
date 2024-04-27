@@ -21,6 +21,7 @@ const ThemeSwitch = () => {
       <SunIcon className="w-4 h-4 mr-2" />
       <select
         name="themeSwitch"
+        aria-label="Theme Switcher"
         value={theme}
         onChange={e => setTheme(e.target.value)}>
         <option value="system">System</option>
